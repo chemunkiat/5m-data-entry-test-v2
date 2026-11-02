@@ -18,11 +18,11 @@ Snippet 1
 
 (a) What does this print? Write the exact value.
 
-    Answer:
+    Answer: 17
 
 (b) In one sentence, describe in plain English what this loop computes.
 
-    Answer:
+    Answer: The For loop interates through list of 5 integers assigned by line 1, find and sum up integers that are greater than 4
 
 ------------------------------------------------------------------
 Snippet 2
@@ -37,6 +37,27 @@ Snippet 2
 (c) Write the two lines this program prints, in order.
 
     Answer:
-    Line 1:
-    Line 2:
+    Line 1: Hello, world!
+    Line 2: Hello, Ada!
+
+@chemunkiat ➜ /workspaces/5m-data-entry-test-v2 (main) $ python
+Python 3.14.2 (main, Oct 28 2026, 19:03:49) [GCC 13.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> numbers = [3, 8, 1, 9, 4]
+... total = 0
+... for n in numbers:
+...     if n > 4:
+...         total = total + n
+... print(total)
+... 
+17
+>>> def greet(name="world"):
+...     return "Hello, " + name + "!"
+... 
+... print(greet())
+... print(greet("Ada"))
+... 
+Hello, world!
+Hello, Ada!
+
 """
